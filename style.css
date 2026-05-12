@@ -1,21 +1,96 @@
 body{
-    background-color: #f2f2f2;
+    margin:0;
     font-family: Arial;
+    background:#ffffff;
 }
 
-.container{
-    width: 70%;
-    margin: auto;
-    background-color: white;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 10px;
+header{
+    background:#ff69b4;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
 
-h1{
-    color: darkblue;
+header h1{
+    font-size:50px;
+    margin-bottom:10px;
 }
 
-img{
-    border-radius: 50%;
+header p{
+    font-size:22px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#ffb6c1;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff85ad;
+}
+
+nav{
+    background:white;
+    margin:20px auto;
+    width:90%;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.05);
+}
+
+nav a{
+    margin:20px;
+    text-decoration:none;
+    color:#ff69b4;
+    font-weight:bold;
+}
+
+.card{
+    background:white;
+    width:85%;
+    margin:25px auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#ff69b4;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav {
+        width: 95%;
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
 }

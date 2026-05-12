@@ -1,44 +1,64 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jana Alshalan CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <title>My CV Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <header>
+      <h1>Jana Alshalan</h1>
+      <p>Information Systems Student</p>
+      <button id="welcomeBtn">Welcome</button>
+    </header>
 
-<body>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <div class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        I am an Information Systems student who enjoys web development, learning
+        new technologies, and creating modern websites.
+      </p>
+    </section>
 
-        <h1>Jana Alshalan</h1>
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <p>Shaqra University</p>
+    </section>
 
-        <h2>About Me</h2>
-        <p>
-            I am an Information Systems student at Shaqra University.
-        </p>
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
 
-        <h2>Education</h2>
-        <p>
-            Shaqra University
-        </p>
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <p>Personal CV Website Project</p>
+    </section>
 
-        <h2>Major</h2>
-        <p>
-            Information Systems
-        </p>
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: s445500201@std.su.edu.sa</p>
+    </section>
 
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-
-        <h2>Contact</h2>
-        <p>Email: s445500201@std.su.edu.sa</p>
-
-    </div>
-
-</body>
-
+    <script>
+      const welcomeButton = document.getElementById("welcomeBtn");
+      welcomeButton.addEventListener("click", function () {
+        alert("Hello! Welcome to my page 💖");
+      });
+    </script>
+  </body>
 </html>
